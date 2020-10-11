@@ -18,6 +18,7 @@ func init(){
 	dbName := config.String("db_name")
 
 	connUrl := dbUser +":" + dbPassword + "@tcp("+dbIp+")/"+dbName+"?charset=utf8"
+	fmt.Println(connUrl)
 	db, err := sql.Open(dbDriver,connUrl)
 	if err != nil {
 		panic("数据库连接错误，请检查配置")

@@ -9,7 +9,7 @@ type RegisterController struct {
 	beego.Controller
 }
 
-func (r *RegisterController) Post() {
+func (r *RegisterController) Get() {
 	//解析请求数据
 	var user models.Users
 	err:=r.ParseForm(&user)

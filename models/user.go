@@ -1,6 +1,7 @@
 package models
 
 import (
+	"baoquan_ruanda/db_baoquan"
 	"beego_damo02/db_mysql"
 	"crypto/md5"
 	"encoding/hex"
@@ -29,4 +30,16 @@ func (u Users) SaveUser() (int64,error) {
 		return -1,err
 	}
 	return id,nil
+}
+//
+//查询用户信息
+func (u Users) QueryUser()(*Users,error)  {
+	 row:=db_baoquan.Db.QueryRow("select name from baoquan_registered where name=?and password=?"+
+		u.Name,u.Password)
+	//var name string
+	err:= row.Scan(&u.Name)
+	if err!=nil  {
+		return nil,err
+	}
+	return &u,nil
 }
