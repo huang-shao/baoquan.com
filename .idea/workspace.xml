@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de732919-3af6-46a0-bacc-51d8e9723dc3" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="ProjectId" id="1iibdub9eNGvgyzWt4gSd9qe4f8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/login_img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\login_img" />
+      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\use_img" />
+      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\use_js" />
+      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\use_css" />
+      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\login_css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build baoquan_ruanda">
+    <configuration name="go build baoquan_ruanda" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="baoquan_ruanda" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="baoquan_ruanda" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="baoquan_ruanda" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="baoquan_ruanda" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build baoquan_ruanda" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de732919-3af6-46a0-bacc-51d8e9723dc3" name="默认更改列表" comment="" />
+      <created>1602393449514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602393449514</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="598" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602396544217">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="598" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602396544217" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1602396998997">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602396998997" />
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom" timestamp="1602406746068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602406746068" />
+    <state width="1493" height="242" key="GridCell.Tab.0.center" timestamp="1602406746068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602406746068" />
+    <state width="1493" height="242" key="GridCell.Tab.0.left" timestamp="1602406746068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602406746068" />
+    <state width="1493" height="242" key="GridCell.Tab.0.right" timestamp="1602406746068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602406746068" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602405940418">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602405940418" />
+  </component>
+</project>
