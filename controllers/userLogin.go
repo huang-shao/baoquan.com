@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"baoquan_ruanda/models"
+	"fmt"
 	"github.com/astaxie/beego"
 )
 
@@ -25,6 +26,7 @@ func (l *LoginController) Post() {
 	}
 	u,err:=user.QueryUser()
 	if err!=nil {
+		fmt.Println(err)
 		l.Ctx.WriteString("抱歉,用户登录失败,请重试!")
 		return
 	}

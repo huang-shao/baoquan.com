@@ -8,7 +8,7 @@ import (
 )
 
 var Db *sql.DB
-func init(){
+func Init(){
 	fmt.Println("连接mysql数据库")
 	config := beego.AppConfig
 	dbDriver := config.String("db_driverName")

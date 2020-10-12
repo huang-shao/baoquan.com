@@ -8,7 +8,7 @@ import (
 )
 
 type Users struct {
-	Id int `form:"id`
+	Id int `form:"id"`
 	Name string`form:"name"`
 	Password string `form:"password"`
 }
@@ -34,7 +34,11 @@ func (u Users) SaveUser() (int64,error) {
 //
 //查询用户信息
 func (u Users) QueryUser()(*Users,error)  {
-	 row:=db_baoquan.Db.QueryRow("select name from baoquan_registered where name=?and password=?"+
+	md5Hash:=md5.New()
+	md5Hash.Write([]byte(u.Password))
+	passwordBytes:=md5Hash.Sum(nil)
+	u.Password=hex.EncodeToString(passwordBytes)
+	 row:=db_baoquan.Db.QueryRow("select name from baoquan_registered where name= ? and password= ?",
 		u.Name,u.Password)
 	//var name string
 	err:= row.Scan(&u.Name)

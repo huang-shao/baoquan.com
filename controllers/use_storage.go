@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"fmt"
 	"github.com/astaxie/beego"
 )
 
@@ -10,6 +9,6 @@ type StorageController struct {
 }
 
 func (s *StorageController) Post() {
-	fmt.Println("============================2345678=========================================")
+	//fmt.Println("============================2345678=========================================")
 	s.TplName="storage.html"
 }

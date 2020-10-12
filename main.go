@@ -1,6 +1,7 @@
 package main
 
 import (
+	"baoquan_ruanda/db_baoquan"
 	_ "baoquan_ruanda/routers"
 	"github.com/astaxie/beego"
 )
@@ -17,6 +18,7 @@ func main() {
 	beego.SetStaticPath("/use_js","./static/use_js")
 	beego.SetStaticPath("/use_css","./static/use_css")
 	beego.SetStaticPath("/use_img","./static/use_img")
+	db_baoquan.Init()
 	beego.Run()
 }
 
