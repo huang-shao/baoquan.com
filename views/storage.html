@@ -154,7 +154,7 @@
                                     </li>
                                     <div class="notify-container">
                                         <div class="user">
-                                            <div class="user-content"><span class="phone">18770882156</span><i
+                                            <div class="user-content"><span class="phone">{{.name}}</span><i
                                                         class="iconfont font-down"></i></div>
                                             <ul><a href="https://www.baoquan.com/setting?lang=zh">
                                                     <li>账户中心</li>
@@ -221,14 +221,19 @@
                             <div class="ctn back-ctn">
                                 <div class="attestations-profile main-container">
                                     <div class="attestations-profile-content upload-content">
+
                                         <section class="file-content"><!-- react-text: 2485 --><!-- /react-text -->
+                                            <form id="fform" method="post" enctype="multipart/form-data" action="/upload">
                                             <div class="files-container">
+
                                                 <div class="files-box">
+
                                                     <div class="tag"><p><span class="musts">*</span><span>文件标签</span>
                                                         </p>
                                                         <div class="input-tag" style="position: relative;">
                                                             <div class="el-autocomplete my-autocomplete">
                                                                 <div class="el-input"><input type="text" value=""
+                                                                                             name="upload_title"
                                                                                              placeholder="请输入标签名选择或新增"
                                                                                              class="el-input__inner"
                                                                                              autocomplete="off"></div>
@@ -264,13 +269,18 @@
                                                                 <!-- /react-text --></p><!-- react-text: 2509 -->
                                                             <!-- /react-text --></div>
                                                     </div>
-                                                    <div class="files">
+
+                                                    <div class="files" >
                                                         <div class="upload-icon"><i class="iconfont font-upload"></i>
-                                                            <p class="click-upload">点击上传</p><input type="file" title=" "
-                                                                                                   multiple=""
-                                                                                                   id="uploadOne"></div>
+
+                                                                <p class="click-upload">点击上传</p>
+                                                                <input type="file" title=" " multiple="" id="myfile" name="myfile" value="">
+
+
+                                                        </div>
                                                     </div>
-                                                    <button class="blueButton" type="button">立即存证</button>
+                                                    <input hidden="hidden" type="text" name="huangxunlin" value="{{.Name}}"/>
+                                                    <input class="blueButton" type="submit" value="立即存证"/>
                                                 </div>
                                                 <div class="files-tip"><h3 class="title">温馨提示</h3>
                                                     <p>1、信息安全，人人有责，严禁上传违法、反动、危害社会公共安全等不良信息；</p>
@@ -278,6 +288,8 @@
                                                     <p>3、支持单次最多10个文件批量上传，归属于同一标签（可重置）；</p>
                                                     <p>4、单次上传文件总计不超过210M，超过上限后可能会存证失败。</p></div>
                                             </div>
+                                            </form>
+
                                             <div class="view-image"></div><!-- react-text: 2523 --><!-- /react-text -->
                                             <!-- react-text: 2524 --><!-- /react-text --></section>
                                     </div>
@@ -289,14 +301,14 @@
                 <footer class="user-center-footer"><p
                             style="display: flex; align-items: center; justify-content: center;">
                         <!-- react-text: 2527 -->Copyright&nbsp;©&nbsp;<!-- /react-text --><!-- react-text: 2528 -->
-                        浙江数秦科技有限公司<!-- /react-text --><!-- react-text: 2529 -->&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;
-                        <!-- /react-text --><!-- react-text: 2530 -->浙ICP备15025396号-1<!-- /react-text -->
+                        江西先锋人才科技有限公司<!-- /react-text --><!-- react-text: 2529 -->&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- /react-text --><!-- react-text: 2530 -->赣ICP备2010120001号-1<!-- /react-text -->
                         <!-- react-text: 2531 -->&nbsp;&nbsp;&nbsp;&nbsp;<!-- /react-text --><a
                                 href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602007260"
                                 target="_blank"
                                 style="display: flex; align-items: center; color: rgb(102, 102, 102);"><img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABjFBMVEVHcEzoxWzs04visWL++9725r7dpFXitWH89t337Lr52Ifov3f25qPcsX7gqlb06Zzu46rewXLlvHCdaFjvvl/crGrgvov387jz6ZLt3oDkvFnTk3DKhFvZr4LDfz7oxnzv2X//+dD/74ati3q0lH7Rrnbou1Doulr/1ljVPCLqv1fuzGbVHhjbSScFAWMAAXgBAW3ryFzksVHWj0nSBQnlmDpzd4Dpx2PdmEbrsEnw13TrwWDdn0U8GTzVazK5kVqYeljIIhDMAALKPSO9BA79xU3UxXXrXyNtf4/90GjqcDKRinm+TiUABn756XDepEz1x1f74mzVkjzThT3TLhyrq4LjrUr8lzlRNlHdhDX1fy6ZXzNdXG9NB0TXYTHQFg3XdTjyy27pgj69qXHekET/ulXBvIN0Y2HPuX+clYT2qjwZN5DuvlDx02nYnljNrFJWTm/JWSrZAAZgHlCxDg79KwoAG45pAjaEj5n9LRTEazOBWDqEaUriqVfbbTc2Gk2njVnOeDq1gD8ACJEMcLh/AAAAJnRSTlMA7JHrCGHK/hxBusIqreg9f/XQ+dLgnAKr4fQUXUic++xMvtHLbxvU4Y4AAAFpSURBVBjTY2CAAA5WFWVWDnEGJMDJKxxdXeMgzKuIEGOxt42ucvdiD7W1Z4GJcXBHOESZaOqahIdGcEFFeQTrY6J0dEJ04108zeoZecCC/N6+De4mIfHxmk7uaQbeYEEOEW/9Jt0iHU1NHSdNNwMzJZAbVLMyfe2jTAqDtFLivdwMMjUEgCrFTDOa0119nO0S6owD0/XTssSAKkUjE7MNfJJ0neM0veL0sq1MRYEq+RpTPfRLSuN8EpIqXQw8XIOBguK8Np4ZZbEljo6Ous7l+hme6kxAQe6UWs8KAz292GI9A30zDfYwbnEGcfk8Y9PEDAeP5PyYAjNtUwsjBaCZrOr+xnYBGhqulhp+GpHGRoacINezSmkFB2mrG6lr51oYazNyQsJN1NBQXcvQWlvLRt3KnI8fHKhcflbsRuph1moW/urq5n4SkNBkklILyLFUs9QKUDOXFICGvri0jBwbGx8zGzeTLFgIAGesR4U7iOtUAAAAAElFTkSuQmCC"
-                                    alt="" style="width: 12px;"><!-- react-text: 2534 -->&nbsp;浙公网安备&nbsp;33010602007260号
+                                    alt="" style="width: 12px;"><!-- react-text: 2534 -->&nbsp;赣公网安备&nbsp;202010120001号
                             <!-- /react-text --></a></p></footer>
             </div>
             <span class="redux-toastr" aria-live="assertive"><span><div class="top-left"></div><div
