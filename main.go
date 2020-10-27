@@ -3,32 +3,56 @@ package main
 import (
 	"baoquan_ruanda/blockchain"
 	"baoquan_ruanda/db_baoquan"
-	"baoquan_ruanda/models"
 	_ "baoquan_ruanda/routers"
-	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego"
 )
 
+var BUCKET_NAME  ="blocks"
+
 func main() {
 
-	user1:=models.Users{
-		Id:       1,
-		Name:     "18770882156",
-		Password: "123456",
-	}
-
-	fmt.Println(user1)
-
-json.Unmarshal()
 
 
 
-	return
-	block:=blockchain.NewBlock(0,[]byte{},[]byte{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})
+
+	block:=blockchain.CreateGenesisBlock()
 	fmt.Println(block)
 	fmt.Printf("区块hash值:%x\n",block.Hash)
 	fmt.Printf("区块hash值:%d\n",block.Nonce)
+	//db,err:=bolt.Open("chain.db",0600,nil)
+	//if err!=nil {
+	//	panic(err.Error())
+	//}
+	//defer db.Close()
+	////操作chain.db数据库文件
+	//db.Update(func(tx *bolt.Tx) error {
+	//	var tong *bolt.Bucket
+	//	tong=tx.Bucket([]byte(BUCKET_NAME))
+	//	if tong==nil {
+	//		tong,err=tx.CreateBucket([]byte(BUCKET_NAME))
+	//		if err!=nil {
+	//			return err
+	//		}
+	//	}
+	//	//先查看获取桶中
+	//	lastBlock:=tong.Get([]byte("lasthash"))
+	//	blockHash,err:=block.Serialize()
+	//	if err!=nil {
+	//		return err
+	//
+	//	}
+	//	if lastBlock==nil {
+	//		tong.Put(block.Hash,blockHash)
+	//		tong.Put([]byte("lasthash"),blockHash)
+	//	}
+	//	//tong.Put([]byte("0"),[]byte("a"))
+	//	return nil
+	//})
+
+
+
+
 	return
 	beego.SetStaticPath("/js","./static/js")
 	beego.SetStaticPath("/css","./static/css")

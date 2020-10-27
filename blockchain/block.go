@@ -17,6 +17,12 @@ type Block struct {
 
 }
 
+//生成创世区块，返回区块信息
+func CreateGenesisBlock() Block  {
+	block:=NewBlock(0,[]byte{},[]byte{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})
+	return block
+}
+
 func NewBlock(height int64,data []byte,preHash []byte)(Block)  {
 	block:=Block{
 		Height:    height,
@@ -48,7 +54,7 @@ func NewBlock(height int64,data []byte,preHash []byte)(Block)  {
 	//block.Hash=util.SHA256Hash(blockBytes)
 	return block
 }
-
+//区块的序列化
 func (bk Block)Serialize() ([]byte,error) {
 	buff:=new(bytes.Buffer)
 	err:=gob.NewEncoder(buff).Encode(bk)
@@ -58,6 +64,11 @@ func (bk Block)Serialize() ([]byte,error) {
 	}
 	return buff.Bytes(),nil
 }
+
+
+
+
+//区块的反序列化
 func DeSerialize(data []byte)(*Block,error)  {
 	var block  Block
 	err:=gob.NewDecoder(bytes.NewBuffer(data)).Decode(&block)
