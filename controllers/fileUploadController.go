@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"baoquan_ruanda/blockchain"
 	"baoquan_ruanda/models"
 	"baoquan_ruanda/util"
 	"bufio"
@@ -16,23 +17,19 @@ type FileUploadController struct {
 }
 
 func (f *FileUploadController) Get() {
-	phone:=f.GetString("name")
-	f.Data["Phone"]=phone
+	phone := f.GetString("name")
+	f.Data["Phone"] = phone
 	f.TplName = "storage.html"
 }
-
 func (this *FileUploadController) Post() {
-
 	fileTitle := this.Ctx.Request.PostFormValue("upload_title")
 	phone := this.Ctx.Request.PostFormValue("huangxunlin")
 	//	fmt.Println("自定义的文件标题:",fileTitle)
-
 	f, h, err := this.GetFile("myfile") //获取上传的文件
 	if err != nil {
 		this.Ctx.WriteString("获取失败。")
 		return
 	}
-
 	defer f.Close()
 	fmt.Println("自定义的文件标题:", fileTitle)
 	fmt.Println("文件名称：", h.Filename)
@@ -57,9 +54,9 @@ func (this *FileUploadController) Post() {
 	defer saveFile.Close()
 
 	//计算文件的hash
-    hashFile,err:=os.Open(uploadDir)
-    defer hashFile.Close()
-    hash,err:=util.MD5HashReader(hashFile)
+	hashFile, err := os.Open(uploadDir)
+	defer hashFile.Close()
+	hash, err := util.MD5HashReader(hashFile)
 	//md5Hash := md5.New()
 	//fileBytes, _ := ioutil.ReadAll(f)
 	//md5Hash.Write(fileBytes)
@@ -74,10 +71,17 @@ func (this *FileUploadController) Post() {
 	record.CertTime = time.Now().Unix() //毫秒数
 	record.FileCert = hash
 	record.User_Name = phone //手机号
+
 	_, err = record.SaveRecord()
 	if err != nil {
 		fmt.Println(err)
 		this.Ctx.WriteString("抱歉，数据认证失败！")
+		return
+	}
+	//将需要认证的文件hash值及个人实名信息保存到区块链上
+	_, err = blockchain.CHAIN.SaveData([]byte(hash))
+	if err != nil {
+		this.Ctx.WriteString("抱歉，认证数据上链失败,请重试！")
 		return
 	}
 	//从数据库中读取用户对应的所有认证数据记录

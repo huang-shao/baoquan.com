@@ -1,61 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de732919-3af6-46a0-bacc-51d8e9723dc3" name="默认更改列表" comment="">
+    <list default="true" id="4871f620-dcc0-447e-8721-a1414854f615" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/baoquan_ruanda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/baoquan_ruanda.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/fileUploadController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/fileUploadController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/WechatIMG550.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/f084.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/f098.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/jiulama.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/kakaxi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/woailuo1.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1iibdub9eNGvgyzWt4gSd9qe4f8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1jgndtEgKgAuWhWUZlwarcIFD2q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../boltdb_damo01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\views" />
-      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\css" />
-      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\js" />
-      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\login_img" />
-      <recent name="C:\Users\Goprojects\go\src\baoquan_ruanda\static\use_img" />
-    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build baoquan_ruanda">
     <configuration name="go build baoquan_ruanda" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -76,24 +65,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="login_baoquan.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/baoquan_ruanda/views/login_baoquan.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build baoquan_ruanda" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="JavaScript Debug.login_baoquan.html" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="de732919-3af6-46a0-bacc-51d8e9723dc3" name="默认更改列表" comment="" />
-      <created>1602393449514</created>
+      <changelist id="4871f620-dcc0-447e-8721-a1414854f615" name="默认更改列表" comment="" />
+      <created>1604234692204</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602393449514</updated>
+      <updated>1604234692204</updated>
     </task>
     <servers />
   </component>
@@ -101,45 +86,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="74" key="#Inspections" timestamp="1603205537045">
+    <state x="361" y="74" key="#Notifications" timestamp="1604234875093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="74" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1603205537045" />
-    <state x="598" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602396544217">
+    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1604234875093" />
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604235005905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="598" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602396544217" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1603365582078">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604235005905" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1604237961646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603365582078" />
-    <state width="637" height="206" key="GridCell.Tab.0.bottom" timestamp="1603296536251">
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604237961646" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604239027140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="637" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603296536251" />
-    <state width="637" height="206" key="GridCell.Tab.0.center" timestamp="1603296536251">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604239027140" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604239027140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="637" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603296536251" />
-    <state width="637" height="206" key="GridCell.Tab.0.left" timestamp="1603296536251">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604239027140" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604239027140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="637" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603296536251" />
-    <state width="637" height="206" key="GridCell.Tab.0.right" timestamp="1603296536251">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604239027140" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604239027140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="637" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603296536251" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1603801358626">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604239027140" />
+    <state x="491" y="267" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604238432585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603801358626" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603759759435">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603759759435" />
-    <state x="491" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603018766645">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="491" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1603018766645" />
+    <state x="491" y="267" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1604238432585" />
   </component>
 </project>

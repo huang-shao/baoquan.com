@@ -2,7 +2,7 @@ package models
 
 import (
 	"baoquan_ruanda/db_baoquan"
-	"beego_damo02/db_mysql"
+
 	"crypto/md5"
 	"encoding/hex"
 )
@@ -26,7 +26,7 @@ func (u Users) SaveUser() (int64,error) {
 
 
 	//执行数据库操作
-	row,err:=db_mysql.Db.Exec("insert into baoquan_registered (name,password)"+
+	row,err:=db_baoquan.Db.Exec("insert into baoquan_registered (name,password)"+
 		"values(?,?)",u.Name,u.Password)
 	if err!=nil {
 		return -1,err
